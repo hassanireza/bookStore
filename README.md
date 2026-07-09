@@ -6,8 +6,8 @@ A small, hand-picked online bookshop for browsing and searching a curated shelf 
 
 Rewritten in **TypeScript** with an **object-oriented** domain/service layer (`Book`, `BookCatalog`) and **React class components**, built with **Vite**, and deployed to **GitHub Pages** via **GitHub Actions**.
 
-[![CI](https://github.com/hassanireza/bookStore/actions/workflows/ci.yml/badge.svg)](https://github.com/hassanireza/bookStore/actions/workflows/ci.yml)
-[![Deploy to GitHub Pages](https://github.com/hassanireza/bookStore/actions/workflows/deploy.yml/badge.svg)](https://github.com/hassanireza/bookStore/actions/workflows/deploy.yml)
+[![CI](https://github.com/OWNER/bookStore/actions/workflows/ci.yml/badge.svg)](https://github.com/OWNER/bookStore/actions/workflows/ci.yml)
+[![Deploy to GitHub Pages](https://github.com/OWNER/bookStore/actions/workflows/deploy.yml/badge.svg)](https://github.com/OWNER/bookStore/actions/workflows/deploy.yml)
 [![License: MIT](https://img.shields.io/badge/license-MIT-a7e1f8?labelColor=000)](LICENSE)
 
 [Live demo](https://OWNER.github.io/bookStore) · [Report a bug](../../issues) · [Request a feature](../../issues)
@@ -81,6 +81,8 @@ Pushing to `main` triggers `.github/workflows/deploy.yml`, which installs depend
 `vite.config.ts` sets the Vite `base` path to `/bookStore/` (matching this repo's name) so built asset URLs resolve correctly on a GitHub Pages **project** site (`https://<owner>.github.io/bookStore/`). If you rename the repo or deploy to a custom domain / user site, update `REPO_NAME` in `vite.config.ts` (or set the `VITE_BASE_PATH` env var, e.g. `VITE_BASE_PATH=/ npm run build` for a user/org site or custom domain).
 
 Pull requests and pushes to any non-`main` branch instead run `.github/workflows/ci.yml`, which typechecks, lints, tests, and builds without deploying.
+
+> **Note on `package-lock.json`:** this repo doesn't ship one, so both workflows use `npm install` (not `npm ci`) and skip `actions/setup-node`'s built-in npm cache (which requires a lockfile to key off). Run `npm install` locally once and commit the generated `package-lock.json` for reproducible installs and faster, cached CI — then switch both workflows back to `npm ci` and re-add `cache: "npm"` to the `setup-node` step.
 
 ## Design system
 
