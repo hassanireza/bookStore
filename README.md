@@ -6,8 +6,8 @@ A small, hand-picked online bookshop for browsing and searching a curated shelf 
 
 Rewritten in **TypeScript** with an **object-oriented** domain/service layer (`Book`, `BookCatalog`) and **React class components**, built with **Vite**, and deployed to **GitHub Pages** via **GitHub Actions**.
 
-[![CI](https://github.com/OWNER/bookStore/actions/workflows/ci.yml/badge.svg)](https://github.com/OWNER/bookStore/actions/workflows/ci.yml)
-[![Deploy to GitHub Pages](https://github.com/OWNER/bookStore/actions/workflows/deploy.yml/badge.svg)](https://github.com/OWNER/bookStore/actions/workflows/deploy.yml)
+[![CI](https://github.com/hassanireza/bookStore/actions/workflows/ci.yml/badge.svg)](https://github.com/hassanireza/bookStore/actions/workflows/ci.yml)
+[![Deploy to GitHub Pages](https://github.com/hassanireza/bookStore/actions/workflows/deploy.yml/badge.svg)](https://github.com/hassanireza/bookStore/actions/workflows/deploy.yml)
 [![License: MIT](https://img.shields.io/badge/license-MIT-a7e1f8?labelColor=000)](LICENSE)
 
 [Live demo](https://OWNER.github.io/bookStore) · [Report a bug](../../issues) · [Request a feature](../../issues)
