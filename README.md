@@ -14,8 +14,6 @@ Rewritten in **TypeScript** with an **object-oriented** domain/service layer (`B
 
 </div>
 
-> Replace `OWNER` above with your GitHub username/org once the repo is pushed.
-
 ---
 
 ## Overview
