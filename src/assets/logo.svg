@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="book-store-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304 45" role="img" aria-labelledby="book-store-logo-title">
+  <title id="book-store-logo-title">Book Store</title>
+  <text x="2" y="34" font-family="'Work Sans', Arial, sans-serif" font-weight="800" font-size="32" letter-spacing="-0.5" fill="#000" textLength="112" lengthAdjust="spacingAndGlyphs">Book</text>
+  <circle cx="133" cy="24" r="7" fill="#a7e1f8" stroke="#000" stroke-width="2.5"/>
+  <text x="150" y="36" font-family="'Libre Baskerville', Georgia, serif" font-style="italic" font-weight="700" font-size="28" fill="#000" textLength="118" lengthAdjust="spacingAndGlyphs">Store</text>
+  <line x1="2" y1="42" x2="268" y2="42" stroke="#000" stroke-width="2.5" stroke-linecap="round"/>
+</svg>
